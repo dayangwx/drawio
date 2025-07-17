@@ -145,7 +145,7 @@
         <mxCell id="YFfJXEZBGBs_gFEX884V-27" value="具体工厂类-MysqlConnectFactory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="600" y="700" width="162" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YFfJXEZBGBs_gFEX884V-28" value="抽象工厂类-AbstractDBConnectFactory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="YFfJXEZBGBs_gFEX884V-28" value="抽象工厂类-AbstractDBConnectFactory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="827" y="760" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YFfJXEZBGBs_gFEX884V-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="YFfJXEZBGBs_gFEX884V-29" target="YFfJXEZBGBs_gFEX884V-28">
