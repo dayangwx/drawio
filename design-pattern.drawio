@@ -305,6 +305,9 @@
         <mxCell id="92s3AY_fScIU7rxtt17s-54" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;div&gt;&amp;nbsp; public static void main(String[] args) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;// 可切换为 EmailFactory、WeChatFactory 等&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MessageFactory factory = new SmsFactory();&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MessageService service = new MessageService(factory);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; service.sendMessage(&quot;你好，这是一条通知&quot;, &quot;1234567890&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="92s3AY_fScIU7rxtt17s-53">
           <mxGeometry x="15" y="45" width="380" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="92s3AY_fScIU7rxtt17s-55" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;抽象工厂案例：&lt;br&gt;如果我们想要一个发送消息的工厂。 有Sender， Formatter，Logger三个组件。&lt;br&gt;希望可以通过SMS，Wechat， Eamail发送消息。同时支持后续的扩展。&lt;br&gt;下面这个案例就可以实现这个功能。&amp;nbsp;&lt;br&gt;我们可以发现如果想要增加发送消息的方式，只需要新写xxxSender, xxxFormatter, xxxLogger即可。&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1260" width="600" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
