@@ -22,7 +22,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="创建型-工厂设计模式" id="Page-1">
-    <mxGraphModel dx="655" dy="386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2037" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -193,8 +193,142 @@
         <mxCell id="YFfJXEZBGBs_gFEX884V-41" value="满足了开闭原则。如果想要获取其他DB连接的对象，就去新建xxxConnect类，以及具体工厂类xxxConnectFactory&lt;div&gt;虽说满足了开闭原则，&lt;/div&gt;&lt;div&gt;但是会发现如果想要增加一个功能，那么类就会增加两个。&amp;nbsp;&lt;/div&gt;&lt;div&gt;1： 复杂度增加&lt;/div&gt;&lt;div&gt;2： 产品功能单一。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;比如说：我现在想要让它MQ的连接呢？github的连接？文件服务器的连接？&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="980" width="430" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="YFfJXEZBGBs_gFEX884V-42" value="抽象类DBConnect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="91" y="1250" width="120" height="60" as="geometry" />
+        <UserObject label="&lt;div style=&quot;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px; text-indent: 0px; vertical-align: middle; direction: ltr;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;抽象工厂模式&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" tags="Background" id="9ifcQX4vvn5vu0cJJsfU-15">
+          <mxCell style="verticalAlign=middle;align=center;overflow=width;vsdxID=8;fillColor=none;gradientColor=none;shape=stencil(nZBLDoAgDERP0z3SI/i5B4koRAWC+Lu9kMaIxpW7mfZNkw5gOSvhJHA2B28Huek2KMAKONdGSa9DVIA1YNlZL3tvF9OSdyKRSU12TRd2yrGU4OzIXUPgqE0GFuw3evlP+Df6AKO4P6Ry8t27jTiiJrE+AQ==);strokeColor=#000000;strokeWidth=2;spacingTop=-3;spacingBottom=-3;spacingLeft=-3;spacingRight=-3;points=[];labelBackgroundColor=none;rounded=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+            <mxGeometry x="130" y="1291" width="127" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-18" target="9ifcQX4vvn5vu0cJJsfU-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-17" value="implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9ifcQX4vvn5vu0cJJsfU-16">
+          <mxGeometry x="0.1379" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-18" value="顶层抽象工厂类MessageFactory" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1621" width="230" height="104" as="geometry">
+            <mxRectangle x="380" y="1210" width="190" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-19" value="MessageSender createSender();" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-18">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-20" value="MessageFormatter createFormatter();" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-18">
+          <mxGeometry y="52" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-21" value="MessageLogger createLogger();" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-18">
+          <mxGeometry y="78" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="9ifcQX4vvn5vu0cJJsfU-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="203" as="sourcePoint" />
+            <mxPoint x="230" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="203" />
+              <mxPoint x="310" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-23" value="MessageFormatter" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1571" width="220" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-24" value="String format(String message);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-23">
+          <mxGeometry y="32" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-25" value="MessageSender" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1371" width="220" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-26" value="void send(String message, String to);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-25">
+          <mxGeometry y="32" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-27" value="MessageLogger" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1781" width="220" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-28" value="void log(String message, String to);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-27">
+          <mxGeometry x="-5" y="31" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-29" value="具体工厂类SmsFactory" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1841" width="410" height="104" as="geometry">
+            <mxRectangle x="380" y="1210" width="190" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-30" value="MessageSender createSender()&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;&amp;nbsp;{ return new SmsSender(); }&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-29">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-31" value="MessageFormatter createFormatter()&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;{ return new SmsFormatter(); }&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-29">
+          <mxGeometry y="52" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-32" value="MessageLogger createLogger()&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;{ return new SmsLogger(); }&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-29">
+          <mxGeometry y="78" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-33" value="SMSSender" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1280" width="260" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-34" value="void send(String message, String to) {...}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-33">
+          <mxGeometry x="10" y="32" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-35" value="SMSFormatter" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="997" y="1509" width="220" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-36" value="String format(String message) {...}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-35">
+          <mxGeometry x="-5" y="32" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-37" value="SMSLogger" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="1725" width="220" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-38" value="void log(String message, String to) {...}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-37">
+          <mxGeometry x="-5" y="32" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-34" target="9ifcQX4vvn5vu0cJJsfU-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-40" value="implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9ifcQX4vvn5vu0cJJsfU-39">
+          <mxGeometry x="-0.0075" y="4" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-26" target="9ifcQX4vvn5vu0cJJsfU-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="1418" />
+              <mxPoint x="610" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-24" target="9ifcQX4vvn5vu0cJJsfU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-36" target="9ifcQX4vvn5vu0cJJsfU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-44" value="implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9ifcQX4vvn5vu0cJJsfU-43">
+          <mxGeometry x="-0.2044" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="9ifcQX4vvn5vu0cJJsfU-38" target="9ifcQX4vvn5vu0cJJsfU-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-46" value="implements" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9ifcQX4vvn5vu0cJJsfU-45">
+          <mxGeometry x="-0.1498" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-47" value="MessageService" style="swimlane;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="260" y="2081" width="420" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-48" value="&lt;div&gt;private MessageFactory factory;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public MessageService(MessageFactory factory) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; this.factory = factory;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public void sendMessage(String rawMessage, String recipient) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; String formatted = factory.createFormatter().format(rawMessage);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; factory.createSender().send(formatted, recipient);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; factory.createLogger().log(formatted, recipient);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-47">
+          <mxGeometry x="20" y="40" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-49" value="MainAPP" style="swimlane;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="807" y="2081" width="420" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-50" value="&lt;div style=&quot;line-height: 150%;&quot;&gt;&lt;div&gt;&amp;nbsp; public static void main(String[] args) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;// 可切换为 EmailFactory、WeChatFactory 等&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MessageFactory factory = new SmsFactory();&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; MessageService service = new MessageService(factory);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; service.sendMessage(&quot;你好，这是一条通知&quot;, &quot;1234567890&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9ifcQX4vvn5vu0cJJsfU-49">
+          <mxGeometry x="15" y="45" width="380" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9ifcQX4vvn5vu0cJJsfU-51" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;抽象工厂案例：&lt;br&gt;如果我们想要一个发送消息的工厂。 有Sender， Formatter，Logger三个组件。&lt;br&gt;希望可以通过SMS，Wechat， Eamail发送消息。同时支持后续的扩展。&lt;br&gt;下面这个案例就可以实现这个功能。&amp;nbsp;&lt;br&gt;我们可以发现如果想要增加发送消息的方式，只需要新写xxxSender, xxxFormatter, xxxLogger即可。&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1371" width="600" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
