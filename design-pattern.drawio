@@ -420,8 +420,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="XJ39QgwdF3gTgbFGesZm-1" value="概念：&lt;div&gt;作用：&lt;/div&gt;&lt;div&gt;优点：&lt;br&gt;缺点：&lt;br&gt;适用场景：&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="110" y="200" width="80" height="90" as="geometry" />
+        <mxCell id="XJ39QgwdF3gTgbFGesZm-1" value="概念：&lt;div&gt;作用：&lt;/div&gt;&lt;div&gt;优点：&lt;br&gt;缺点：&lt;br&gt;适用场景：&lt;/div&gt;&lt;div&gt;桥接与适配器结合的场景&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="160" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
